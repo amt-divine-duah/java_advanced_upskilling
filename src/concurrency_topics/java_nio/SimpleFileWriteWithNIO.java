@@ -10,7 +10,7 @@ public class SimpleFileWriteWithNIO {
 
     public static void main(String[] args) {
         // File to write to
-        File file = new File("src/concurrency_topics/java_nio/output.txt");  // Specify the output file
+        File file = new File("src/concurrency_topics/java_nio/output.txt");
 
         // Open file channel in write mode
         try (FileChannel channel = FileChannel.open(file.toPath(), StandardOpenOption.WRITE, StandardOpenOption.CREATE)) {  // Open for writing and create if needed
