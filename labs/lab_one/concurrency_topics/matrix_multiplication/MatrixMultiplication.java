@@ -1,4 +1,4 @@
-package concurrency_topics.matrix_multiplication;
+package labs.lab_one.concurrency_topics.matrix_multiplication;
 
 import java.util.ArrayList;
 import java.util.List;

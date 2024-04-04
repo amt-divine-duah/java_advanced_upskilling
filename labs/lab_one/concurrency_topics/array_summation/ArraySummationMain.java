@@ -1,6 +1,5 @@
-package concurrency_topics.array_summation;
+package labs.lab_one.concurrency_topics.array_summation;
 
-import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
 

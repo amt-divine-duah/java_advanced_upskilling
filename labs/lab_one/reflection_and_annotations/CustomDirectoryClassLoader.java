@@ -1,8 +1,6 @@
-package reflection_and_annotations;
+package labs.lab_one.reflection_and_annotations;
 
 import java.io.*;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 
 public class CustomDirectoryClassLoader extends ClassLoader {
 
@@ -36,11 +34,11 @@ public class CustomDirectoryClassLoader extends ClassLoader {
     }
 
     public static void main(String[] args) {
-        String directoryPath = "C:\\Santana\\Java Tutorials\\Amalitech Upskilling\\java_advanced_upskilling\\src\\concurrency_topics\\array_summation";
+        String directoryPath = "C:\\Santana\\Java Tutorials\\Amalitech Upskilling\\java_advanced_upskilling\\labs\\lab_one\\concurrency_topics\\array_summation";
         CustomDirectoryClassLoader classLoader = new CustomDirectoryClassLoader(directoryPath);
 
         try {
-            Class<?> loadedClass = classLoader.loadClass("concurrency_topics.array_summation.ArraySummation");
+            Class<?> loadedClass = classLoader.loadClass("labs.lab_one.concurrency_topics.array_summation.ArraySummation");
             String simpleName = loadedClass.getSimpleName();
             System.out.println("I have loaded " + simpleName);
         } catch (ClassNotFoundException e) {

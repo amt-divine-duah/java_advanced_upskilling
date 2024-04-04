@@ -1,4 +1,4 @@
-package reflection_and_annotations;
+package labs.lab_one.reflection_and_annotations;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

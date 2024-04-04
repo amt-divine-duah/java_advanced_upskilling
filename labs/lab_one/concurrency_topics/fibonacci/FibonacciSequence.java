@@ -8,7 +8,7 @@
  * The Fibonacci sequence is defined as follows:
  * F(number) = F(number-1) + F(number-2), where F(0) = 0 and F(1) = 1
  */
-package concurrency_topics.fibonacci;
+package labs.lab_one.concurrency_topics.fibonacci;
 
 import java.util.concurrent.RecursiveTask;
 

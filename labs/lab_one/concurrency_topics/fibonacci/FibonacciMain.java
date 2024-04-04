@@ -1,4 +1,4 @@
-package concurrency_topics.fibonacci;
+package labs.lab_one.concurrency_topics.fibonacci;
 
 import java.util.concurrent.ForkJoinPool;
 
