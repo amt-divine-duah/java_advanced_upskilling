@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: java-sso
+  security:
+    oauth2:
+      client:
+        provider:
+          azure:
+            issuer-uri: ${ISSUER_URI}
+        registration:
+          azure-dev:
+            provider: azure
+            client-secret: ${CLIENT_SECRET}
+            client-id: ${CLIENT_ID}
+            scope:
+              - email
+              - profile
+              - openid
