@@ -1,0 +1,13 @@
+server:
+  port: 4027
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: mortgage-api
+          uri: ${MORTGAGE_API_URI:http://localhost:8080}
+          predicates:
+            - Path=/api/v1/mortgage/**
+#          filters:
+#            - PrefixPath=/api/v1
